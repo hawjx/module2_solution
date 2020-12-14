@@ -1,57 +1,70 @@
-body {
-   /********** Base styles **********/
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
 
-    h1 {
-        font-size: 1.75em;
-        margin-bottom: 15px;
-    }
+h1 {
+    font-size: 1.75em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+}
 
-    p {
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-        font-family: Helvetica;
-        color: black;
-    }
+p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+}
 
-    section {
-        border: 1px solid black;
-        width: 33.3%;
-        margin-left: auto;
-        font-family: Helvetica;
-        text-align: center;
-        font-size: 1.25em;
-    }
+section {
+    border: 1px solid black;
+    width: 33.3%;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.25em;
+}
 
-    div {
-        border: 1px solid black;
-        background-color:lightgray;
-        margin: 5%;
-    }
+#section-1 {
+    background-color: salmon;
+    color: black;
+}
 
-    /********** Large devices only **********/
-    @media (min-width: 992px) {
-        .col-lg-4 {
-            width: 31.33%;
-            float: left;
-            margin: 1%;
-        }
-    }
+#section-2 {    
+    background-color: maroon;
+    color: white;
+}
 
-    /********** Medium devices only **********/
-    @media (min-width: 768px) and (max-width: 991px) {
-        .col-md-6, .col-md-12 {
-            float: left;
-            margin: 1%;
-        }
-        .col-md-6 {
-            width: 48%;
-        }
-        .col-md-12 {
-            width: 99%;
-        }
+#section-3 {    
+    background-color:wheat;
+    color: black;
+}
+
+div {
+    border: 1px solid black;
+    background-color:lightgray;
+    margin: 5%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 31.33%;
+        float: left;
+        margin: 1%;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+        margin: 1%;
+    }
+    .col-md-6 {
+        width: 48%;
+    }
+    .col-md-12 {
+        width: 98%;
     }
 }
